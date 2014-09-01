@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtFormatString = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,9 +43,9 @@
             this.BtnAlignRight = new System.Windows.Forms.Button();
             this.PnlFormatStrings = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
+            this.LnkMsdn = new System.Windows.Forms.LinkLabel();
             this.CbValueCultureInfo = new StringFormatComposer.CultureInfoPicker();
             this.CbResultCultureInfo = new StringFormatComposer.CultureInfoPicker();
-            this.LnkMsdn = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -200,6 +201,17 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Format Strings:";
             // 
+            // LnkMsdn
+            // 
+            this.LnkMsdn.AutoSize = true;
+            this.LnkMsdn.Location = new System.Drawing.Point(218, 9);
+            this.LnkMsdn.Name = "LnkMsdn";
+            this.LnkMsdn.Size = new System.Drawing.Size(62, 13);
+            this.LnkMsdn.TabIndex = 18;
+            this.LnkMsdn.TabStop = true;
+            this.LnkMsdn.Text = "Link MSDN";
+            this.LnkMsdn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkMsdn_LinkClicked);
+            // 
             // CbValueCultureInfo
             // 
             this.CbValueCultureInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -219,17 +231,6 @@
             this.CbResultCultureInfo.Size = new System.Drawing.Size(121, 21);
             this.CbResultCultureInfo.TabIndex = 12;
             this.CbResultCultureInfo.SelectedIndexChanged += new System.EventHandler(this.CbResultCultureInfo_SelectedIndexChanged);
-            // 
-            // LnkMsdn
-            // 
-            this.LnkMsdn.AutoSize = true;
-            this.LnkMsdn.Location = new System.Drawing.Point(218, 9);
-            this.LnkMsdn.Name = "LnkMsdn";
-            this.LnkMsdn.Size = new System.Drawing.Size(62, 13);
-            this.LnkMsdn.TabIndex = 18;
-            this.LnkMsdn.TabStop = true;
-            this.LnkMsdn.Text = "Link MSDN";
-            this.LnkMsdn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkMsdn_LinkClicked);
             // 
             // Form1
             // 
@@ -253,6 +254,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtFormatString);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

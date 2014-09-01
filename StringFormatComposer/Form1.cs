@@ -14,6 +14,7 @@ namespace StringFormatComposer
 
             CbDatatype.Items.Add(new DoubleDataType());
             CbDatatype.Items.Add(new DateTimeDataType());
+            CbDatatype.Items.Add(new TimeSpanDataType());
             CbDatatype.Items.Add(new IntDataType());
             CbDatatype.SelectedIndex = 0;
         }
